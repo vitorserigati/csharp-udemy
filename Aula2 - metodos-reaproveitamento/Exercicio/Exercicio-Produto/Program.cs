@@ -15,12 +15,12 @@ class Program
         prod.Quantidade = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
         Console.WriteLine($"Dados do Produto: {prod}");
-        Console.WriteLine("Digite o número de produtos a ser adicionado ao estoque: ");
+        Console.WriteLine("\n\nDigite o número de produtos a ser adicionado ao estoque: ");
         prod.AdicionarItens(int.Parse(Console.ReadLine()));
-        Console.WriteLine($"Dados Atualizados: {prod}");
-        Console.WriteLine("Digite o número de produtos a ser retirado do estoque: ");
+        Console.WriteLine($"\nDados Atualizados: {prod}");
+        Console.WriteLine("\nDigite o número de produtos a ser retirado do estoque: ");
         prod.RemoverItens(int.Parse(Console.ReadLine()));
-        Console.WriteLine($"Dados Atualizados: {prod}");
+        Console.WriteLine($"\n\nDados Atualizados: {prod}");
 
     }
 

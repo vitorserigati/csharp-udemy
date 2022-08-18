@@ -22,7 +22,7 @@ public class Produto
 
     public override string ToString()
     {
-        return $"{Name}, ${Valor.ToString("F2", CultureInfo.InvariantCulture)}, {Quantidade} itens em estoque:";
+        return $"{Name}, ${Valor.ToString("F2", CultureInfo.InvariantCulture)}, {Quantidade} unidades, Total: ${valorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture)}";
 
     }
 }

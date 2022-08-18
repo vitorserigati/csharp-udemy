@@ -14,14 +14,14 @@ class Program
         Console.WriteLine("Quandidade em estoque: ");
         prod.Quantidade = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-        Console.WriteLine($"Dados do Produto: {prod.Name}, ${prod.Valor.ToString("F2", CultureInfo.InvariantCulture)}, {prod.Quantidade} unidades.");
-        Console.WriteLine($"Total: ${prod.valorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Dados do Produto: {prod}");
         Console.WriteLine("Digite o número de produtos a ser adicionado ao estoque: ");
         prod.AdicionarItens(int.Parse(Console.ReadLine()));
-        Console.WriteLine($"Dados Atualizados: {prod.Name}, ${prod.Valor.ToString("F2", CultureInfo.InvariantCulture)}, {prod.Quantidade} unidades. Total: ${prod.valorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Dados Atualizados: {prod}");
         Console.WriteLine("Digite o número de produtos a ser retirado do estoque: ");
         prod.RemoverItens(int.Parse(Console.ReadLine()));
-        Console.WriteLine($"Dados Atualizados: {prod.Name}, ${prod.Valor.ToString("F2", CultureInfo.InvariantCulture)}, {prod.Quantidade} unidades. Total: ${prod.valorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Dados Atualizados: {prod}");
+
     }
 
 }

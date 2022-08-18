@@ -1,3 +1,4 @@
+using System.Globalization;
 namespace Exercicio_Produto;
 
 public class Produto
@@ -17,5 +18,11 @@ public class Produto
     public void RemoverItens(int Qnt)
     {
         Quantidade -= Qnt;
+    }
+
+    public override string ToString()
+    {
+        return $"{Name}, ${Valor.ToString("F2", CultureInfo.InvariantCulture)}, {Quantidade} itens em estoque:";
+
     }
 }

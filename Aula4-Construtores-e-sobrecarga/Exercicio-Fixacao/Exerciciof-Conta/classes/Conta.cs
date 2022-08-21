@@ -7,13 +7,12 @@ public class Conta
 {
     private double Taxa = 5.0;
     public int Numero { get; private set; }
-    private string _nome { get; set; }
+    private string _nome;
 
     public double Saldo { get; private set; }
 
     public Conta(int numero, string nome)
     {
-        Saldo = 0.0;
         Numero = numero;
         if (nome != null && nome.Length > 1)
         {
@@ -22,13 +21,13 @@ public class Conta
         }
     }
 
-    public Conta(int numero, string nome, double saldo) : this(numero, nome)
+    public Conta(int numero, string nome, double depInicial) : this(numero, nome)
     {
-        Saldo = saldo;
+        Deposito(depInicial);
     }
     public string Nome
     {
-        get { return _nome; }
+        get => _nome;
         set
         {
             if (value != null && value.Length > 1)
@@ -37,6 +36,9 @@ public class Conta
             }
         }
     }
+
+
+
     public void Deposito(double valor)
     {
         if (valor > 0)

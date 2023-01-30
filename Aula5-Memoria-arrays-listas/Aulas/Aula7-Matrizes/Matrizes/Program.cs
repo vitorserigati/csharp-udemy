@@ -28,6 +28,3 @@ for (int linha = 0; linha < ordem; linha++)
 }
 
 Console.WriteLine("Negativos : {0}", negativos);
-
-
-

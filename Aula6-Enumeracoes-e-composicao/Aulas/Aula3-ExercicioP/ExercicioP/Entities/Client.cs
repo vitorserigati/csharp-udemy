@@ -1,3 +1,4 @@
+using System.Globalization;
 namespace ExercicioP.Entities
 {
     public class Client
@@ -9,7 +10,12 @@ namespace ExercicioP.Entities
         public Client(string name, string email, string birthDate){
             Name = name;
             Email = email;
-            BirthDate = DateTime.Parse(birthDate);
+            BirthDate = DateTime.ParseExact(birthDate, "dd/MM/yyyy", CultureInfo.InvariantCulture);
         }
+
+        public override string ToString()
+                {
+                    return $"{Name} ({BirthDate.ToShortDateString()}) - {Email}";
+                }
     }
 }

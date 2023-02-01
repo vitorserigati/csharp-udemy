@@ -1,3 +1,4 @@
+using System.Globalization;
 namespace ExercicioP.Entities
 {
     public class OrderItem
@@ -17,5 +18,9 @@ namespace ExercicioP.Entities
         {
             return Quantity * Price;
         }
+        public override string ToString()
+                {
+                    return $"{Product.Name}, ${Price.ToString("F2", CultureInfo.InvariantCulture)}, Quantity: {Quantity}, Subtotal: ${SubTotal().ToString("F2", CultureInfo.InvariantCulture)}";
+                }
     }
 }

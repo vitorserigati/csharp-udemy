@@ -1,3 +1,4 @@
+using System.Globalization;
 using ExercicioP.Entities.Enum;
 namespace ExercicioP.Entities
 {
@@ -26,12 +27,31 @@ namespace ExercicioP.Entities
         public double Total()
         {
             double total = 0;
-            foreach(OrderItem item in Items)
+            foreach (OrderItem item in Items)
             {
                 total += item.SubTotal();
             }
 
             return total;
+        }
+
+        public override string ToString()
+        {
+            StringWriter sw = new StringWriter();
+            sw.WriteLine("ORDER SUMARY");
+            sw.WriteLine("Order moment: {0}", Moment);
+            sw.WriteLine($"Order status: {Status}");
+            sw.WriteLine($"Client: {Client}");
+            sw.WriteLine("Order Items: ");
+
+            foreach(OrderItem item in Items)
+            {
+                sw.WriteLine(item.ToString());
+            }
+            sw.WriteLine($"${Total().ToString("F2", CultureInfo.InvariantCulture)}");
+
+
+            return sw.ToString();
         }
 
     }

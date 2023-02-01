@@ -9,7 +9,7 @@ namespace ExercicioP.Test.Entities
         public void subTotalShouldCalculateTheRightValue(double result, int quantity, double price)
         {
             OrderItem order = new OrderItem(quantity, price, "Product");
-            double actual = order.subTotal();
+            double actual = order.SubTotal();
 
             Assert.Equal(result, actual);
 

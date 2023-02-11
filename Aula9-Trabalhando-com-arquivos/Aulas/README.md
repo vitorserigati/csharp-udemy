@@ -29,7 +29,52 @@ Disponibiliza uma stream associada a um arquivo, permitindo operações de leitu
 
 Suporte a dados binários.
 
-Instanciação:
+- Instanciação:
 
     - Vários Construtores
     - File / FileInfo
+
+## StreamReader
+
+É uma stream capaz de ler caracteres a partir de uma stream binária (ex: FileStream).
+
+Suporte a dados no formato de texto.
+
+- Instanciação:
+
+    - Vários construtores.
+    - File/FileInfo
+
+### Stream
+
+Stream em programação/informática significa uma sequência de dados. Comum quando queremos transmitir dados em sequência.
+
+## Block Using
+
+Sintaxe simplificada que garante que os objetos IDisposable serão fechados.
+
+Objetos IDisposable NÃO são gerenciados pelo CLR. Eles precisam ser manualmente fechados.
+
+Exemplos: Font, FileStream, StreamReader, StreamWriter...
+
+## StreamWriter
+
+É uma stream capaz de escrever caracteres a partir de uma stream binária (ex: FileStream).
+Suporte a dados no formato de texto.
+
+- Instanciação:
+
+    - Vários Construtores.
+    - File/FileInfo
+        - CreateText(path)
+        - AppendText(string)
+
+
+## Directory, DirectoryInfo
+
+- Namespace System.IO
+- Operações com pastas (create, enumerate, get files, etc.).
+- Directory
+    - static members (simples, mas realiza verificação de segurança para cada operação)
+- DirectoryInfo
+    - Instance Members

@@ -15,14 +15,23 @@ Pra queê interfaces?
 Exemplo 1:
 
 > Enter rental data:
+>
 > Car Model: Civic
+>
 > Pickup (dd/MM/yyyy HH:mm): 25/02/2023 10:30
+>
 > Return (dd/MM/yyyy HH:mm): 25/02/2023 14:40
+>
 > Enter price per hour: 10.00
+>
 > Enter price per day: 130.00
+>
 > INVOICE:
+>
 > Basic payment: 50.00
+>
 > Tax> 10.00
+>
 > Total Payment: 60.00
 
 Calculations:

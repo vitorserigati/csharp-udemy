@@ -78,3 +78,8 @@ Suporte a dados no formato de texto.
     - static members (simples, mas realiza verificação de segurança para cada operação)
 - DirectoryInfo
     - Instance Members
+## Path 
+
+- Namespace System.IO
+
+- Realiza Operações com strings que contém informações de arquivos ou pastas.

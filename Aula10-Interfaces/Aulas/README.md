@@ -38,3 +38,42 @@ Calculations:
 Duration = (25/02/2023 14:40) - (25/02/2023 10:30) = 4:10 = 5 hours
 Basic payment = 5 * 10 = 50
 Tax = 50 * 20% = 50 * 0.2 = 10
+
+## Injeção de dependência por meio de construtor
+
+```csharp
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Some code
+            RentalService rentalService = new RentalService(hour, day, new BrazilTaxService()); // Objeto instanciado diretamente no construtor da classe.
+        }
+    }
+
+    class rentalService
+    {
+        private ITaxService _taxService;
+
+        public RentalService(doube pricePerHour, double pricePerDay, ITaxService taxService) // Aceita qualquer objeto que implemente a interface ITaxService
+        {
+            PricePerHour = pricePerHour;
+            PricePerDay = pricePerDay;
+            _taxService = taxService;
+        }
+    }
+```
+### Inversão de controle
+
+- Inversão de controle
+
+> Padrão de desenvolvimento que consistem em retirar da classe a responsabilidade de instanciar suas dependências.
+
+- Injeção de dependência
+
+> É uma forma de realizar a inversão de controle: um componente externo instancia a dependência, que é então injetada no objeto "pai". Pode ser implementada de várias formas:
+
+>   - construtor
+>   - Objeto de instanciação (builder / factory)
+>   - Container / framework

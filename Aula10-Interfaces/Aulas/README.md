@@ -66,14 +66,14 @@ Tax = 50 * 20% = 50 * 0.2 = 10
 ```
 ### Inversão de controle
 
-- Inversão de controle
-
-> Padrão de desenvolvimento que consistem em retirar da classe a responsabilidade de instanciar suas dependências.
-
-- Injeção de dependência
-
-> É uma forma de realizar a inversão de controle: um componente externo instancia a dependência, que é então injetada no objeto "pai". Pode ser implementada de várias formas:
-
->   - construtor
->   - Objeto de instanciação (builder / factory)
->   - Container / framework
+> - Inversão de controle
+>
+>>  Padrão de desenvolvimento que consistem em retirar da classe a responsabilidade de instanciar suas dependências.
+>
+> - Injeção de dependência
+>
+>>  É uma forma de realizar a inversão de controle: um componente externo instancia a dependência, que é então injetada no objeto "pai". Pode ser implementada de várias formas:
+>>
+>>   - construtor
+>>   - Objeto de instanciação (builder / factory)
+>>   - Container / framework

@@ -98,4 +98,14 @@ A herança múltipla pode gerar o problema do diamante: Uma ambiguidade causada 
 
 Herança múltipla não é permitida na maioria das linguages!
 
+## Interface IComparable
 
+```csharp
+
+public interface IComparable 
+{
+    int CompareTo(object other);
+}
+```
+Interface usada internamente dentro da linguagem.
+Implementa um método que aceita um objeto e retorna um inteiro para dizer se a comparação é maior, menor ou igual ao objeto comparado.

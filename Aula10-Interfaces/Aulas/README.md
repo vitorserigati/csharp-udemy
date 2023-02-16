@@ -77,3 +77,17 @@ Tax = 50 * 20% = 50 * 0.2 = 10
    - construtor
    - Objeto de instanciação (builder / factory)
    - Container / framework
+
+
+### Herdar vs Cumprir Contrato
+
+Aspectos comuns entre herança e interfaces:
+
+- Relação é um.
+- Generalização/especialização.
+- Polimorfismo.
+
+### Diferença Fundamental
+
+- Herança => reuso.
+- Interface => Contrato a ser cumprido.

@@ -91,3 +91,11 @@ Aspectos comuns entre herança e interfaces:
 
 - Herança => reuso.
 - Interface => Contrato a ser cumprido.
+
+### Problema do diamante
+
+A herança múltipla pode gerar o problema do diamante: Uma ambiguidade causada pela existência do mesmo método em mais de uma superclasse.
+
+Herança múltipla não é permitida na maioria das linguages!
+
+

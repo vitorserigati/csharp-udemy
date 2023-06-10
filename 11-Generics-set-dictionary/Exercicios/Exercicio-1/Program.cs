@@ -1,10 +1,11 @@
 ﻿namespace Course;
+
 class Program
 {
 
     public static void Main(string[] args)
     {
-        PrintService service = new PrintService();
+        PrintServiceG<int> service = new PrintServiceG<int>();
 
         Console.WriteLine("How many values?");
         int n = int.Parse(Console.ReadLine());

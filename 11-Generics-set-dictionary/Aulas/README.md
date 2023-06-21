@@ -21,13 +21,13 @@ Problema exemplo:
 ex de output:
 
 ```
-Enter N: 3
-Computer, 890.50
-Iphone X, 910.00
-Tablet,550.00
+    Enter N: 3
+    Computer, 890.50
+    Iphone X, 910.00
+    Tablet,550.00
 
-Most expensive:
-Iphone, 910.00
+    Most expensive:
+    Iphone, 910.00
 ```
 
 Restrições Possíveis:
@@ -48,23 +48,23 @@ Restrições Possíveis:
 ## Equals
     Método que compara se o objeto é igual a outro, retornando true ou false.
 
-    ```csharp
+```csharp
     string a = "Maria";
     string b = "Alex";
 
     Console.WriteLine(a.Equals(b)); // False
-    ```
+```
 
 ## GetHashCode
     Método que retorna um número inteiro representando um código gerado a partir das informações do objeto.
 
-    ```csharp
+```csharp
      string a = "Maria";
      string b = "Alex";
 
      Console.WriteLine(a.GetHashCode());
      Console.WriteLine(b.GetHashCode());
-    ```
+```
 
 ### Regra de ouro do GetHashcode
 - Se o código e dois objetos for diferente, então os dois objetos são diferentes.
@@ -79,19 +79,19 @@ Restrições Possíveis:
     - Oferece operações eficientes de conjunto: interseção, união, diferença.
 
 ```csharp
-using System.Collections.Generic;
+    using System.Collections.Generic;
 
-HashSet<string> set = New HashSet<string>();
+    HashSet<string> set = New HashSet<string>();
 
-set.Add("TV");
-set.Add("Notebook");
-set.Add("Tablet");
-set.Contains("TV"); // True
+    set.Add("TV");
+    set.Add("Notebook");
+    set.Add("Tablet");
+    set.Contains("TV"); // True
 
-foreach(string item in set){
+    foreach(string item in set){
 
-    Console.WriteLine(item);
-}
+        Console.WriteLine(item);
+    }
 ```
 
 ## Diferenças

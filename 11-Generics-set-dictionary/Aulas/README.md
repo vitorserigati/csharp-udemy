@@ -115,3 +115,12 @@ foreach(string item in set){
 - ExceptWith(other) - Operação diferença: remove do conjunto os elementos contidos em other.
 - Remove(T)
 - RemoveWhere(predicate)
+
+# Comparação de coleções Hash
+
+- Se GetHashCode e Equals estiverem implementados:
+    - Primeiro GetHashCode. Se der igual, usa Equals para confirmar.
+
+- Se GetHashCode e Equals <strong> NÃO </strong> estiverem implementados:
+    - Tipos referência: compara as referências dos objetos.
+    - tipos valor: comparar os valores dos atributos.
